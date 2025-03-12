@@ -14,7 +14,7 @@ jobs:
               with:
                   dotnet-version: '9.x'
             - name: Restore dependencies
-              run: dotnet restore
+              run: dotnet restore UuidGen.sln
               working-directory: src
             - name: Build
               run: dotnet build UuidGen.sln -c Release --no-restore
