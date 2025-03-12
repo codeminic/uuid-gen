@@ -15,11 +15,15 @@ jobs:
                   dotnet-version: '9.x'
             - name: Restore dependencies
               run: dotnet restore
+              working-directory: src
             - name: Build
               run: dotnet build --configuration Release --no-restore
+              working-directory: src
             - name: Pack
               run: dotnet pack --configuration Release --no-build --output ./nupkg /p:PackageVersion=${{ github.ref }}
+              working-directory: src
             - name: Publish
               env:
                   NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
               run: dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
+              working-directory: src
