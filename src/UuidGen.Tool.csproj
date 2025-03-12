@@ -7,6 +7,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         
+        <PackageId>codeminic.UuidGen</PackageId>
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>gg</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
