@@ -2,7 +2,7 @@ name: Publish
 on:
     push:
         tags:
-            - v*.*.*
+            - '*.*.*'
 
 jobs:
     publish:
@@ -18,7 +18,7 @@ jobs:
             - name: Build
               run: dotnet build --configuration Release --no-restore
             - name: Pack
-              run: dotnet pack --configuration Release --no-build --output ./nupkg
+              run: dotnet pack --configuration Release --no-build --output ./nupkg /p:PackageVersion=${{ github.ref }}
             - name: Publish
               env:
                   NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
