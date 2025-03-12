@@ -20,7 +20,7 @@ jobs:
               run: dotnet build UuidGen.sln -c Release --no-restore
               working-directory: src
             - name: Pack
-              run: dotnet pack UuidGen.sln -c Release --no-build -o ./nupkg /p:PackageVersion=${{ github.ref }}
+              run: dotnet pack UuidGen.sln -c Release --no-build -o ./nupkg /p:PackageVersion=${{ github.ref_name }}
               working-directory: src
             - name: Publish
               env:
