@@ -7,11 +7,13 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         
-        <PackageId>codeminic.UuidGen</PackageId>
         <PackAsTool>true</PackAsTool>
+        <PackageId>codeminic.UuidGen</PackageId>
         <ToolCommandName>gg</ToolCommandName>
+        <Authors>codeminic</Authors>
         <PackageOutputPath>./nupkg</PackageOutputPath>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/codeminic/uuid-gen</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
