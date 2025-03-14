@@ -1,2 +1,1 @@
-﻿var uuid = Guid.CreateVersion7();
-await Console.Out.WriteAsync(uuid.ToString());
+﻿await Console.Out.WriteAsync(Guid.CreateVersion7().ToString());
