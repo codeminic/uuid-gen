@@ -11,6 +11,11 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>gg</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
 </Project>
