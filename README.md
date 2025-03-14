@@ -1,6 +1,7 @@
-# UuidGen.Tool
+![Publish](https://github.com/codeminic/uuid-gen/actions/workflows/publish.yml/badge.svg)
+[![NuGet version](https://img.shields.io/nuget/v/codeminic.UuidGen.svg)](https://www.nuget.org/packages/codeminic.UuidGen/)
 
-UuidGen.Tool is a dead simple .NET tool for generating UUIDs using the new UUID version 7.
+This is a dead simple .NET tool for generating UUIDs using the new UUID version 7.
 
 ## Installation
 
